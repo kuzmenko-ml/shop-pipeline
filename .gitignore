@@ -4,3 +4,8 @@ SQL/mock_db.sql
 .env
 __pycache__/
 STORAGE/
+dbt_transformation/shop_project/target/
+dbt_transformation/shop_project/logs/
+dbt_transformation/logs/
+logs/
+*.log
