@@ -1,0 +1,22 @@
+version: 2 
+
+sources:
+  - name: shop_raw   # логічна назва джерела всередині dbt, потрібна лише для зручності у sql запитах      
+    database: MY_SHOP_DB          
+    schema: RAW                
+    
+    tables:
+      - name: CATALOG       
+        description: "Сирі дані про існуючий товар в компанії"
+        
+      - name: ORDERS          
+        description: "Сирі дані про загальну інформацію замовлення"
+
+      - name: ORDER_ITEMS
+        description: "Сирі дані з конкретними позиціями замовлення"
+
+      - name: ORDER_STATUS
+        description: "Сирі дані типи статусів"
+      
+      - name: USERS
+        description: "Сирі дані про всіх корситувачів"
